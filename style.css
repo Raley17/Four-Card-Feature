@@ -1,0 +1,137 @@
+:root {
+  --color-1: hsl(0, 78%, 62%);
+  --color-2: hsl(180, 62%, 55%);
+  --color-3: hsl(34, 97%, 64%);
+  --color-4: hsl(212, 86%, 64%);
+  --color-5: hsl(234, 12%, 34%);
+  --color-6: hsl(212, 6%, 44%);
+  --color-7: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.fontone {
+  font-weight: 200;
+}
+.fonttwo {
+  font-weight: 400;
+}
+.fontthree {
+  font-weight: 600;
+}
+
+body {
+  font-size: 15px;
+  font-family: "poppins-thin", sans-serif;
+}
+
+header {
+  padding: 4em 2em;
+  h1 {
+    text-align: center;
+    color: var(--color-5);
+    font-weight: 100;
+    font-size: 24px;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  p {
+    color: var(--color-6);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+.box,
+.box2,
+.box3,
+.box4 {
+  height: 15em;
+  width: 20em;
+  margin: 1em;
+  padding: 2em;
+  box-shadow:
+    hsla(234, 12%, 34%, 0.19) 0px 10px 20px,
+    hsla(234, 12%, 34%, 0.123) 0px 16px 24px;
+  border-radius: 0em 0em 1em 1em;
+  background-color: var(--color-7);
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    color: var(--color-5);
+  }
+
+  p {
+    color: var(--color-6);
+    font-size: 12px;
+  }
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  img {
+    width: 4em;
+    height: 4em;
+  }
+}
+
+.box::before,
+.box2::before,
+.box3::before,
+.box4::before {
+  content: "";
+  position: absolute;
+  top: -0.25em;
+  left: 0;
+  right: 0;
+  height: 1em;
+  border-radius: 0.5em 0.5em 0 0;
+  z-index: -1;
+}
+
+.box::before {
+  background-color: var(--color-2);
+}
+
+.box2::before {
+  background-color: var(--color-1);
+}
+
+.box3::before {
+  background-color: var(--color-3);
+}
+
+.box4::before {
+  background-color: var(--color-4);
+}
+
+footer {
+  margin-top: 1em;
+  color: var(--color-5);
+  text-align: center;
+  padding: 1em;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+    color: var(--color-5);
+  }
+}
