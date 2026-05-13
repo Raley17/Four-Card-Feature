@@ -38,7 +38,7 @@ header {
     text-align: center;
     color: var(--color-5);
     font-weight: 100;
-    font-size: 24px;
+    font-size: 32px;
     span {
       font-weight: bold;
     }
@@ -49,6 +49,7 @@ header {
     font-weight: 400;
     text-align: center;
     margin-top: 1em;
+    font-size: 15px;
   }
 }
 main {
@@ -75,9 +76,7 @@ main {
   width: 20em;
   margin: 1em;
   padding: 2em;
-  box-shadow:
-    hsla(234, 12%, 34%, 0.19) 0px 10px 20px,
-    hsla(234, 12%, 34%, 0.123) 0px 16px 24px;
+  box-shadow: rgba(51, 104, 158, 0.3) 0px 8px 16px;
   border-radius: 0em 0em 1em 1em;
   background-color: var(--color-7);
   position: relative;
