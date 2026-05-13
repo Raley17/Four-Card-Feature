@@ -26,6 +26,10 @@
 body {
   font-size: 15px;
   font-family: "poppins-thin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -144,8 +148,9 @@ footer {
 
 @media screen and (min-width: 1440px) {
   header {
+    width: 40em;
     p {
-      padding: 0em 44em;
+      width: 35em;
     }
   }
 
