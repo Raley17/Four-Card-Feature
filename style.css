@@ -73,7 +73,7 @@ main {
 .box2,
 .box3,
 .box4 {
-  height: 15em;
+  height: 14.5em;
   width: 22.5em;
   margin: 1em;
   padding: 2em;
@@ -148,6 +148,7 @@ footer {
 
 @media screen and (min-width: 1440px) {
   header {
+    padding: 6em 2em 2em;
     width: 40em;
     p {
       width: 35em;
