@@ -54,6 +54,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
+
+    .middlecolumn {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
   }
 }
 
@@ -133,5 +139,20 @@ footer {
   a {
     text-decoration: none;
     color: var(--color-5);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    p {
+      padding: 0em 44em;
+    }
+  }
+
+  main {
+    article {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }
